@@ -1,0 +1,8 @@
+{
+  "targetProtocol": "ssh+docker:",
+  "targetHostname": "alwaysai@100.70.31.204",
+  "targetPath": "alwaysai/yolo5",
+  "dockerImageId": "sha256:461ee34017cede4371234a0bb34e00024dc56499e04b8862ca9f51c8eb3c66c2",
+  "targetHardware": "jetson-jp5.1",
+  "deviceId": "299ca206-b825-443e-9576-acce34bad5de"
+}
