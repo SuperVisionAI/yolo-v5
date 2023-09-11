@@ -1,10 +1,10 @@
+import os
+os.environ["ALWAYSAI_DBG_DISABLE_MODEL_VALIDATION"] = "1"
 import edgeiq
 from edgeiq.processing.object_detection.types import PostProcessParams, PreProcessParams
 from typing import List
 import numpy as np
 import cv2
-import os
-os.environ["ALWAYSAI_DBG_DISABLE_MODEL_VALIDATION"] = "1"
 
 
 def yolo_v5_pre_process(params: PreProcessParams) -> np.ndarray:

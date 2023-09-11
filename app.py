@@ -1,3 +1,5 @@
+import os
+os.environ["ALWAYSAI_DBG_DISABLE_MODEL_VALIDATION"] = "1"
 import time
 import edgeiq
 from yolo_v5 import yolo_v5_post_process, yolo_v5_pre_process
