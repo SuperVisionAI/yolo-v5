@@ -2,12 +2,12 @@ import os
 os.environ["ALWAYSAI_DBG_DISABLE_MODEL_VALIDATION"] = "1"
 import time
 import edgeiq
-from yolo_v5 import yolo_v5_post_process, yolo_v5_pre_process
+from yolo_v5 import yolo_v5_post_process_optimized, yolo_v5_pre_process
 
 
 def main():
     obj_detect = edgeiq.ObjectDetection("alwaysai/yolo_v5", pre_process=yolo_v5_pre_process,
-                                        post_process=yolo_v5_post_process)
+                                        post_process=yolo_v5_post_process_optimized)
     obj_detect.load(engine=edgeiq.Engine.DNN)
 
     print("Loaded model:\n{}\n".format(obj_detect.model_id))
